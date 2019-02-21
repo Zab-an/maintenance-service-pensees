@@ -3,8 +3,13 @@
 	$base = "inspiration";
 	$hote = "localhost";
 	$usager = "root";
-	$motdepasse = "testtest";
+	$motdepasse = "bitnami";
 	$dsn = "mysql:dbname=".$base.";host=" . $hote;
-	$basededonnees = new PDO($dsn, $usager, $motdepasse);
+	try{
+		$basededonnees = new PDO($dsn, $usager, $motdepasse);
+	}
+	catch(PDOException $exception){
+		echo 'Failed';
+	}
 
 ?>
