@@ -1,14 +1,13 @@
-import java.util.Iterator;
-import java.util.List;
-
-import accesseur.PenseeDAO;
-import modele.Pensee;
+import accesseur.cache.PenseeDAO;
 import outils.Journal;
 import vue.VueInspirationVisuelle;
 
 public class App {
 
 	public static void main(String[] parametres) {
+
+		PenseeDAO cachePenseeDAO = new PenseeDAO();
+		cachePenseeDAO.listerPensees();
 
 		//Journal.activer();
 		Journal.activerNiveau(0);
