@@ -37,9 +37,8 @@ public class VueInspirationVisuelle extends Application {
 	public void afficherPensee(Pensee pensee)
 	{
 		System.out.println("afficherPensee()");
-		TextArea champsMessage = (TextArea) scene.lookup("#listePensees"); // TODO corriger l'id
-
-		champsMessage.setText(pensee.getMessage() + " - " + pensee.getAuteur());
+		TextArea champsMessage = (TextArea) scene.lookup("#listePensees");
+		champsMessage.setText(pensee.getMessage() + " - " + pensee.getAuteur() + " (" + pensee.getSource() + ")");
 		Journal.ecrire(5, pensee.getMessage() + " - " + pensee.getAuteur());
 
 	}

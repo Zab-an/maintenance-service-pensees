@@ -14,7 +14,7 @@ import modele.Pensee;
 import outils.Journal;
 import outils.JournalDesactivable;
 
-public class PenseeDAO implements PenseeURL{
+public class 	PenseeDAO implements PenseeURL{
 
 	protected DecodeurPenseesXML decodeur = new DecodeurPenseesXML();
 

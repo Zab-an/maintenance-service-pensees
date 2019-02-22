@@ -1,19 +1,19 @@
 package modele;
 
 public class Pensee {
-	
+
 	protected int idPensee;
 	protected String auteur;
 	protected String message;
+	protected String source;
 	protected int annee;
-	
-	
+
 	public Pensee(String auteur, String message) {
 		super();
 		this.auteur = auteur;
 		this.message = message;
 	}
-	
+
 	public int getId() {
 		return idPensee;
 	}
@@ -23,6 +23,14 @@ public class Pensee {
 	public String getAuteur() {
 		return auteur;
 	}
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
 	public void setAuteur(String auteur) {
 		this.auteur = auteur;
 	}
